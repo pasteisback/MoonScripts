@@ -280,6 +280,7 @@ local plrexecutor = identifyexecutor and identifyexecutor() or "Your exploit"
 
 print("Deep UNC Test made by SprayingCactus (RamingCactus)")
 print("✅: Passed. ❌: Failed.")
+print("\n")
 
 local function testfunc(func)
 	local success, result = pcall(getfenv()[func])
@@ -304,9 +305,11 @@ local useragent = getuseragent()
 if successuseragent then
 	print("✅ request")
 	print("✅ user_agent: " .. useragent)
+	passes += 1
 else
 	print("❌ request")
 	print("❌ user_agent")
+	fails += 1
 end
 print("\n")
 print("Real UNC Test:")
