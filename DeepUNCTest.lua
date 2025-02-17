@@ -255,7 +255,6 @@ local exploitfuncs = {
 	"keyrelease",
 	"httppost",
 	"httpget",
-	"request",
 	"syn.request",
 	"syn.websocket.connect",
 	"syn.queue_on_teleport",
@@ -269,8 +268,6 @@ local exploitfuncs = {
 	"rawset",
 	"getmetatable",
 }
-
-
 
 local passes = 0
 local fails = 0
